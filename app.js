@@ -18,7 +18,6 @@ $(document).ready(function(){
     
     //Set the current player to player 1 so that we can get this show on the road!
     this.currentPlayer = this.player1;  
-
     this.gameOver = false;
     this.turns = 0;
     this.playerOneScore = 0;
@@ -144,6 +143,8 @@ $(document).ready(function(){
   // This constructor creates a new Player object, and takes the parameter "team" to set the team that the player plays on.
   function Player(team) {
       this.team = team;
+      //Future feature to get users name when creating player. This will require some refactoring on how classes are assigned when a player moves
+      //this.team = prompt("Please enter your name");
   };
   
   //**************************************************************
