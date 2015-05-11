@@ -1,4 +1,6 @@
 #WDI: First Project
+## Tic Tac Wars | Journey to the edge of the board
+![gif](http://media.giphy.com/media/dutOvm3NahxYY/giphy.gif "title text")
 
 ### Technologies Used
 
@@ -24,3 +26,8 @@ Clicking the *'reset game'* button at the top of the page resets the board so th
 3. Add ability to save game state and return to game
 4. Add ability to select from a variety of player tokens
 
+Click [here](https://trello.com/b/nKyjSd11/ga-project-1) to see current development backlog.
+
+**So, are you ready to play?**
+
+![r2d2 gif](http://media.giphy.com/media/864533yaFNqs8/giphy.gif "title text")
