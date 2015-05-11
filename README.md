@@ -1,24 +1,26 @@
 #WDI: First Project
 
-###Workflow & Submission
-Full project requirements and instructions are [here](https://github.com/sf-wdi-18/notes/blob/master/projects/project_1.md)! **Read that entire document before writing a line of code.**
-This file is where you will document your project.  
-
-* Fork this repository.
-* Clone this repo, the `Project_1_TTT` repo, from *your* gitHub account onto your computer.
-* Follow the project instructions [here](https://github.com/sf-wdi-18/notes/blob/master/projects/project_1.md).
-* Make your changes in your local `Project_1_TTT` repo.
-* Use either HTML or, even better, [markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) to format this file as you document your project.
-* `git add` and `git commit` your changes as you go.  Remember to say what you did in your commit messages!
-* `git push` to update the repo on your gitHub account.
-* Delete this section, the `Workflow & Submission` section, of this file -- you don't need it in your documentation!
-
-
 ### Technologies Used
-*What technologies did you use while developing this project?*
+
+ - HTML/CSS
+ - JavaScript
+ - jQuery
 
 ###Existing features
-*What features does your new tic-tac-toe app have?*
+**Basic Tic Tac Wars**
+This is a Star Wars themed, basic implementation of the classic game *Tic Tac Toe*, using Object Oriented pricinples.
+
+With this implementation, two players are made upon creation of a new game. One player for the Rebel Alliance (Luke Skywalker), and another player for the Gallactic Empire (Darth Vader). 
+
+Upon each click of a square a player image is added to mark the players move. After a player has selected a square, no further clicks can be performed on that box.
+
+Once a player has met a winning combination of spaces an alert is issued and the players score is updated to reflect how many wins the player has achieved. If all squares are selected and no winner is determined than a tie notification is dispatched.
+
+Clicking the *'reset game'* button at the top of the page resets the board so that a new game can be played. 
 
 ###Planned features
-*What changes would you make to your project if you continued with it in the future?*
+1. Add jQuery animations to further customize player turns. For example, alternate hover over colors based on current player
+2. Refactor JS to allow for custom player names based on user input either via prompt or form
+3. Add ability to save game state and return to game
+4. Add ability to select from a variety of player tokens
+
