@@ -111,12 +111,12 @@ $(document).ready(function(){
           _this.nextPlayer();
         };
     });
+    // jQuery function to alternate css hover background color according to currentPlayer
     $(".box").hover(function() {
       if (_this.currentPlayer == _this.player1){
         $(this).addClass('hover1'); 
       } else if (_this.currentPlayer == _this.player2){
-        $(this).addClass('hover2'); 
-      }
+        $(this).addClass('hover2');}
       }, function() {
         $(this).removeClass("hover1").removeClass("hover2");
     });
@@ -144,7 +144,7 @@ $(document).ready(function(){
   // This constructor creates a new Player object, and takes the parameter "team" to set the team that the player plays on.
   function Player(team) {
       this.team = team;
-};
+  };
   
   //**************************************************************
   // Board constructor

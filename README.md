@@ -26,6 +26,7 @@ Clicking the *'reset game'* button at the top of the page resets the board so th
 2. Refactor JS to allow for custom player names based on user input either via prompt or form
 3. Add ability to save game state and return to game
 4. Add ability to select from a variety of player tokens
+5. Add computer mode to play against a computer
 
 Click [here](https://trello.com/b/nKyjSd11/ga-project-1) to see current development backlog.
 

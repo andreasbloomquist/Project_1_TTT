@@ -23,7 +23,6 @@ button {
 #board {
   width: 31em;
   height: 30em;
-  position: relative;
   display: block;
   margin: 0 auto;
 }
