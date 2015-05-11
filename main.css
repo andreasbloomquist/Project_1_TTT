@@ -1,1 +1,86 @@
 /* Style Sheet */
+body {
+  background-image: url('assets/background.jpg');
+  background-position: center;
+  margin: 0 auto;
+  background-color: #000000;
+  font-family: 'Play', sans-serif;
+}
+
+button {
+  background-color: #D2871A;
+  padding: .2em 3em;
+  margin: 0 auto;
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  color: #3b3b3b;
+  border: none;
+  font-size: 2em;
+  font-family: 'Play', sans-serif;
+}
+
+#board {
+  width: 31em;
+  height: 30em;
+  position: relative;
+  display: block;
+  margin: 0 auto;
+}
+
+.box {
+  width: 10em;
+  height: 10em;
+  border: 0.1em solid white;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 65%;
+}
+
+.luke {
+	background-image: url("assets/luke.png");
+}
+
+.darth {
+	background-image: url("assets/darth.png");	
+}
+
+#logo {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  margin-top: 2em;
+}
+
+#score {
+  position: relative;
+  text-align: center;
+  padding: 1em;
+}
+
+#player1 {
+  color: #AFEEEE;
+}
+
+#player2 {
+  color: red;
+}
+
+.score{
+  display: inline;
+  padding: 0 8em 0 7em;
+  margin: 0 auto;
+}
+
+
+button:hover { 
+    background-color: #FFCC00;
+}
+.box:hover {
+  background-color: #AFEEEE;
+}
+.score:hover {
+  color: #AFEEEE;
+}
+
