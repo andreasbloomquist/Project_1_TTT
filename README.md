@@ -22,7 +22,7 @@ Once a player has met a winning combination of spaces an alert is issued and the
 Clicking the *'reset game'* button at the top of the page resets the board so that a new game can be played. 
 
 ###Planned features
-~~1. Add jQuery animations to further customize player turns. For example, alternate hover over colors based on current player~~
+1. ~~Add jQuery animations to further customize player turns. For example, alternate hover over colors based on current player~~
 2. Refactor JS to allow for custom player names based on user input either via prompt or form
 3. Add ability to save game state and return to game
 4. Add ability to select from a variety of player tokens
