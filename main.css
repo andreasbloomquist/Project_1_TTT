@@ -9,7 +9,7 @@ body {
 
 button {
   background-color: #FFCC00;
-  padding: .2em 3em;
+  padding: .11em 2.5em .2em;
   margin: 0 auto;
   display: block;
   margin-top: 1em;
@@ -31,7 +31,7 @@ button {
 .box {
   width: 10em;
   height: 10em;
-  border: 0.1em solid white;
+  border: 0.1em solid #F8F8F8;
   display: inline-block;
   background-repeat: no-repeat;
   background-position: center;
@@ -75,15 +75,15 @@ button {
 
 
 button:hover { 
-    background-color: #D2871A;
+    background-color: #B4B5B5;
+    opacity: 0.9;
+    color: #F8F8F8;
 }
 .hover1:hover {
   background-color: #AFEEEE;
+  opacity: 0.85;
 }
 .hover2:hover {
   background-color: #FF6666;
+  opacity: 0.85;
 }
-.score:hover {
-  color: #AFEEEE;
-}
-
