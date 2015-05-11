@@ -8,7 +8,7 @@ body {
 }
 
 button {
-  background-color: #D2871A;
+  background-color: #FFCC00;
   padding: .2em 3em;
   margin: 0 auto;
   display: block;
@@ -75,10 +75,13 @@ button {
 
 
 button:hover { 
-    background-color: #FFCC00;
+    background-color: #D2871A;
 }
-.box:hover {
+.hover1:hover {
   background-color: #AFEEEE;
+}
+.hover2:hover {
+  background-color: #FF6666;
 }
 .score:hover {
   color: #AFEEEE;

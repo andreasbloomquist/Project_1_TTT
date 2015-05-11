@@ -1,7 +1,8 @@
 $(document).ready(function(){
   //Variables to hold text string for winner alerts, this felt easier to read than adding the strings in the alerts themselves.
-  var rebelWin = "The Rebel fighters have proven victorious against the evil Galatic Empire!"
-  var darkWin = "Darth Vader and the Galatic Empire have destroyed the Rebel Alliance."
+  var rebelWin = "The Rebel fighters have proven victorious against the evil Galatic Empire!";
+  var darkWin = "Darth Vader and the Galatic Empire have destroyed the Rebel Alliance.";
+  var tie = "Despite an epic fight, neither side can claim victory. It's a draw!";
 
   //**************************************************************
   // Game constructor
@@ -30,7 +31,6 @@ $(document).ready(function(){
   // This method is invokved only after the checkWinner method has determined that a winning combination was met
   // The setWinner() method sets the game to be over (so that additional moves are disabled), and alerts who won the game.
   // In addition, the setWinner() method increments the score counter for the given team, and dynamically updates the html score counter.
-
   Game.prototype.setWinner = function(winner){
     this.gameOver = true;
     if (winner === this.player1.team){
@@ -42,14 +42,14 @@ $(document).ready(function(){
       $('#player2').html("galactic empire: " + this.playerTwoScore);
       alert(darkWin);
     };
-};
+  };
+
   //**************************************************************
   // Prototype to check if there's a winner
   //**************************************************************
   // This prototype, creates a method to check the possible winning combinations against an instance created using the Game constructor.
   // The team that is passed into the function to check for a winner is the team from the player that is currently playing.
   // If a winning combination is found for the given team, the setWinner method is evoked to perform the functions when a player wins the game.
-  
   Game.prototype.checkWinner = function(team){
     //Check row 1 for this.currentPlayer
     if ($("#1").hasClass(team) && $("#2").hasClass(team) && $("#3").hasClass(team)) {
@@ -73,8 +73,8 @@ $(document).ready(function(){
     } else if ($("#1").hasClass(team) && $("#5").hasClass(team) && $("#9").hasClass(team) || $("#3").hasClass(team) && $("#5").hasClass(team) && $("#7").hasClass(team)) {
       return this.setWinner(team);
     };
-    if (this.board.turns == 8) {
-      return alert("tie");
+    if (this.turns == 8) {
+      return alert(tie);
     };
   };
 
@@ -84,7 +84,6 @@ $(document).ready(function(){
   // The nextPlayer method is called after each turn to update the "current player" to the proper value, and to increment the turn counter.
   Game.prototype.nextPlayer = function() {
       //Switch current player to player 2
-      var _this = this;
       if (this.turns % 2 == 0) {
         this.currentPlayer = this.player2;
         return this.turns += 1; 
@@ -110,9 +109,19 @@ $(document).ready(function(){
         $(event.target).addClass(_this.currentPlayer.team);
           _this.checkWinner(_this.currentPlayer.team);
           _this.nextPlayer();
-      };
-  });
-};
+        };
+    });
+    $(".box").hover(function() {
+      if (_this.currentPlayer == _this.player1){
+        $(this).addClass('hover1'); 
+      } else if (_this.currentPlayer == _this.player2){
+        $(this).addClass('hover2'); 
+      }
+      }, function() {
+        $(this).removeClass("hover1").removeClass("hover2");
+    });
+  };
+
   //**************************************************************
   // Prototype to reset the game
   //**************************************************************

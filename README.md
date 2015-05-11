@@ -1,6 +1,6 @@
 #WDI: First Project
 ## Tic Tac Wars | Journey to the edge of the board
-![gif](http://media.giphy.com/media/dutOvm3NahxYY/giphy.gif "title text")
+![gif](http://media.giphy.com/media/dutOvm3NahxYY/giphy.gif "Tic Tac Wars | Journey to the edge of the board")
 
 ### Technologies Used
 
@@ -9,7 +9,8 @@
  - jQuery
 
 ###Existing features
-**Basic Tic Tac Wars**
+**Tic Tac Wars v1.0**
+
 This is a Star Wars themed, basic implementation of the classic game *Tic Tac Toe*, using Object Oriented pricinples.
 
 With this implementation, two players are made upon creation of a new game. One player for the Rebel Alliance (Luke Skywalker), and another player for the Gallactic Empire (Darth Vader). 
@@ -30,4 +31,4 @@ Click [here](https://trello.com/b/nKyjSd11/ga-project-1) to see current developm
 
 **So, are you ready to play?**
 
-![r2d2 gif](http://media.giphy.com/media/864533yaFNqs8/giphy.gif "title text")
+![r2d2 gif](http://media.giphy.com/media/864533yaFNqs8/giphy.gif "I'm READY!")
